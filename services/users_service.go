@@ -65,6 +65,7 @@ func GenerateToken(inputEmail string) (string, string) {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"email": inputEmail,
 		"iss":   "feedback",
+		"time":  now,
 	})
 
 	tokenString, err := token.SignedString([]byte(secret))
