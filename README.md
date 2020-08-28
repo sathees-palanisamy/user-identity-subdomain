@@ -1,6 +1,6 @@
 user-identity-subdomain
 
-https://identity-f55axo5vlq-ez.a.run.app
+https://user-identity-subdomain-go.ew.r.appspot.com
 
 gcloud builds submit --tag gcr.io/user-identity-subdomain-rest/identity
 
